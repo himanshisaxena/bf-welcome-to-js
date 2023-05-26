@@ -34,4 +34,8 @@ console.log('and');
 
 console.log('logs');
 
+console.log('Hello');
+
+console.log('World');
+
 console.log('!');

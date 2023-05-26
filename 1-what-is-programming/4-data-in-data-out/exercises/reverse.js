@@ -1,14 +1,18 @@
 'use strict';
 
 /* Reverse
+This program reverse the input.
 
-  Data In:
-
+Data In:
+Any text
 
   Data Out:
-
-
+  The reverse input 
+  
   Test Cases:
+  '' -> ''
+  'abc' -> 'cba'
+  'HimanshiSaxena' -> 'anexaSihsnamiH'
 
 
 */
@@ -31,7 +35,7 @@ for (let character of input) {
 
 /* --- create a final message --- */
 
-let message = input + ' -> ' + reversed;
+let message = reversed + ' -> ' + input;
 console.log(message);
 
 /* --- display message to the user --- */

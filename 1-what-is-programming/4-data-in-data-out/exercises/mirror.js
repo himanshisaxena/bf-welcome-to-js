@@ -1,15 +1,16 @@
 'use strict';
 
 /* Mirror
-
+This program mirror the input.
   Data In:
-
+Any text
 
   Data Out:
-
-
+The mirror input 
   Test Cases:
-
+  '' -> ''
+  'abc' -> 'cba'
+  'HimanshiSaxena' -> 'anexaSihsnamiH'
 
 */
 
