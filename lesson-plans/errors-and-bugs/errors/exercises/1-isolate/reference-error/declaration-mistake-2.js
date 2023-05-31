@@ -5,26 +5,23 @@ console.log('--- in execution phase ---');
 /*
   environment:
 
-  name:
-  message:
-
-  location:
-
-  life cycle:
-
-  the mistake:
-
-  the fix(es):
+  name: ReferenceError
+  message: isValidUserName is not defined
+  location: Line 24
+  life cycle: Creation phase -> Execution phase
+  the mistake: Using isValidUserName before it is declared
+  the fix(es): Declare the isValidUserName variable before using it in the if statement
 */
 
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);
 
+let isValidUserName;
+
 if (userName.length > 3) {
-  isValidUserName = true;
+  isValidUserName = true; // ReferenceError: isValidUserName is not defined
 }
 
-let isValidUserName;
 
 if (userName.length <= 3) {
   isValidUserName = false;

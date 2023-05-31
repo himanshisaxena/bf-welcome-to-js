@@ -12,13 +12,14 @@ whenFormDataChanges('user-info', () => {
 
   // --- read user input ---
 
-  let name = readString('the-name');
+  let firstname = readString('the-firstname');
+  let lastname = readString('the-lastname');
 
-  console.log(name);
+  console.log(firstname,lastname);
 
   // --- create a message ---
 
-  let greeting = 'Hello ' + name + '!';
+  let greeting = 'Hello ' + firstname +' ' + lastname +'!\nGoodbye ' 
 
   // --- display the message ---
 

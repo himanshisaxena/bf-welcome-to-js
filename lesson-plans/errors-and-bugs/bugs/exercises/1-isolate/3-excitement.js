@@ -17,12 +17,14 @@
 
 let text = null;
 while (text === null) {
-  text = prompt('enter some text, it will be excited');
+  text = prompt('Enter some text, it will be excited');
 }
 
 let excited = '';
 for (const character of text) {
-  excited = character + '!';
+
+  excited = excited+character + '!';
+  
 }
 
 alert(excited);

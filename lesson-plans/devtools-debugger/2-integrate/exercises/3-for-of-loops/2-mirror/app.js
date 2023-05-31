@@ -12,18 +12,31 @@ whenFormDataChanges('input', () => {
   // --- read the user's input ---
 
   let userText = readString('to-mirror');
+  let middleCharacter = readString('middle-character');
 
   // --- mirror the text ---
 
-  let mirrored = ' | ';
+  let mirrored = '';
+  let nonMirrored = '';
   for (let char of userText) {
     mirrored = char + mirrored + char;
+    nonMirrored += char;
   }
+
+  // --- apply case transformation ---
+
+  mirrored = mirrored.toUpperCase();
+  nonMirrored = nonMirrored.toLowerCase();
+
+  // --- insert middle character ---
+
+  let mirroredWithMiddle = mirrored.split(' ').join(' ' + middleCharacter + ' ');
 
   // --- display the result ---
 
-  displayString('output', mirrored);
+  displayString('output', mirroredWithMiddle + ' ' + nonMirrored);
 });
+
 
 /*  ===== Challenges =====
 
