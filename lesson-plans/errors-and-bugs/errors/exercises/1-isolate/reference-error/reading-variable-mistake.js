@@ -3,20 +3,21 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: ReferenceError
+  message: tomatoes is not defined
 
-  location:
+  location: Line 21
 
-  life cycle:
+  life cycle: Execution phase
 
-  the mistake:
+  the mistake: Using tomatoes before it is declared
 
-  the fix(es):
+  the fix(es): Declare the tomatoes variable before using it in the console.log
+
 */
 
-console.log(tomatoes);
-
 let tomatoes = 'fresh';
+
+console.log(tomatoes); // ReferenceError: tomatoes is not defined

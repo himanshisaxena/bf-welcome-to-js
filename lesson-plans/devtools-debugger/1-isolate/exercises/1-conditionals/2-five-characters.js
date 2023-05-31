@@ -1,19 +1,22 @@
 'use strict';
 
-let input = prompt('enter something with 5 characters:');
+let characters = 'default value';
+
+characters = prompt('Enter something with 5 characters:');
 
 let message = '';
-if (input === null) {
+if (characters === null) {
   message = ':(';
-} else if (input.length < 5) {
+} else if (characters.length < 5) {
   message = 'too short';
-} else if (input.length === 5) {
+} else if (characters.length === 5) {
   message = 'thank you!';
 } else {
   message = 'too long';
 }
 
 alert(message);
+
 
 /*  ===== Challenges =====
   - Give "input" a default value before asking for the user input.

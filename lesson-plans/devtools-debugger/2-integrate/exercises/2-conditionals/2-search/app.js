@@ -21,22 +21,23 @@ whenFormDataChanges('search-input', () => {
 
   let doesExist = false;
 
-  if (caseSensitive) {
-    doesExist = searchThis.includes(findThis);
-  } else {
+  if (!caseSensitive) {
     let smallSearchThis = searchThis.toLowerCase();
     let smallFindThis = findThis.toLowerCase();
     doesExist = smallSearchThis.includes(smallFindThis);
+  } else {
+    
+    doesExist = searchThis.includes(findThis);
   }
 
   // --- create the message ---
 
-  let message = '';
+let message = '';
 
   if (doesExist) {
-    message = 'yes';
+    message = searchThis +' include ' + findThis;
   } else {
-    message = 'no';
+    message = searchThis +' is not include '+findThis;
   }
 
   // --- display the search results ---

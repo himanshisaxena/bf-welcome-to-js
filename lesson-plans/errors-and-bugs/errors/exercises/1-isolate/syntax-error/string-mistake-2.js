@@ -1,25 +1,22 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
 
-
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: SyntaxError
+  message: Unexpected string
 
-  location:
+  location: 20
 
-  life cycle:
+  life cycle: Execution phase
 
-  the mistake:
+  the mistake: using '' inside the ''
 
-  the fix(es):
+  the fix(es): using "" insetad of ''
 */
 
-const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
+const quotesInQuotes = 'remind yourself "i can do this!" at least once a day';
 
-
+console.log(quotesInQuotes)

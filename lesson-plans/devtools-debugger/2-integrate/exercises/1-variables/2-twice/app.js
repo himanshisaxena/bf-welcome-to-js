@@ -17,7 +17,24 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated = text + '\n' + text;
+  let repeated =
+    '1.' +
+    text +
+    '\n' +
+    '2.' +
+    text +
+    '\n' +
+    '3.' +
+    text +
+    '\n' +
+    '4.' +
+    text +
+    '\n' +
+    '5.' +
+    text +
+    '\n' +
+    '6.' +
+    text;
 
   // --- display the repeated text ---
 
@@ -27,11 +44,13 @@ whenFormDataChanges('user-data', () => {
 
 /*  ===== Challenges =====
 
-  - Copy the user's text 4 times
+  - Copy the user's text 6 times
   - Number the copies like this:
-    1. asdf
-    2. asdf
-    3. asdf
-    4. asdf
+    1. Himanshi
+    2. Himanshi
+    3. Himanshi
+    4. Himanshi
+    5. Himanshi
+    6. Himanshi
 
 */
