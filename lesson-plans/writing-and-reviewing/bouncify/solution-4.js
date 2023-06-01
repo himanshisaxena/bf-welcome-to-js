@@ -23,3 +23,39 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+// A variable to store the userInput
+let txt = '';
+while (true) {
+  // In case null
+  const userInput = prompt('Please enter something : ');
+  if (userInput === null) {
+    alert('There is no escape!');
+    continue;
+  }
+  // In case empty string
+  if (userInput === '') {
+    alert('No empty string allowed');
+    continue;
+  }
+  // If userInput
+  if (userInput) {
+    txt = userInput;
+    break;
+  }
+}
+
+var alternateCase = function (s) {
+  // Entire string lowercase
+  var chars = s.toLowerCase().split("");
+  // Iterates through the string with a step of 2 to make every other character uppercase.
+  for (var i = 0; i < chars.length; i += 2) {
+    chars[i] = chars[i].toUpperCase();
+  }
+  
+  return chars.join("");
+};
+
+alert(alternateCase(txt));
+
+
