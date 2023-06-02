@@ -1,6 +1,13 @@
-'use strict';
+"use strict";
 
-let letters = ' a b c d';
+let letters = " a b c d";
 
 let index = 0;
-while (__) {}
+
+while (index < letters.length) {
+  let currentChar = letters[index];
+  if (currentChar !== " ") {
+    console.log("'" + currentChar + "'");
+  }
+  index++;
+}

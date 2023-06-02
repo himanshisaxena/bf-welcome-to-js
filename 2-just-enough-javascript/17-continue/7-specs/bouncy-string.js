@@ -28,17 +28,51 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input;
+while (true) {
+  input = prompt('Please enter a string of letters:');
+
+  if (input === null) {
+    continue; // User canceled, prompt again
+  }
+
+  if (input === '') {
+    continue; // Empty input, prompt again
+  }
+
+  let isValid = true;
+  for (let i = 0; i < input.length; i++) {
+    const charCode = input.charCodeAt(i);
+    if (
+      (charCode < 65 || charCode > 90) && // not uppercase A-Z
+      (charCode < 97 || charCode > 122) // not lowercase a-z
+    ) {
+      isValid = false;
+      break;
+    }
+  }
+
+  if (!isValid) {
+    continue; // Input contains non-letter characters, prompt again
+  }
+
+  break; // Valid input, exit the loop
+}
+
 console.log('input:', input);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-for (let _ of _) {
+for (let i = 0; i < input.length; i++) {
+  if (i % 2 === 0) {
+    output += input[i].toLowerCase();
+  } else {
+    output += input[i].toUpperCase();
+  }
 }
 
 /* --- alert the result --- */
