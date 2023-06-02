@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -23,11 +21,25 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (output.length !== 10) {
+  let input = prompt('Enter input of 10 characters');
+  
+  if (input === null) {
+    alert('You canceled');
+  } else if (input.length < 10) {
+    let charactersShort = 10 - input.length;
+    alert(`Input is too short. You need ${charactersShort} more character(s).`);
+  } else if (input.length > 10) {
+    let charactersLong = input.length - 10;
+    alert(`Input is too long. You need to remove ${charactersLong} character(s).`);
+  } else {
+    output = input;
+  }
+}
 
 /* --- alert the result --- */
 

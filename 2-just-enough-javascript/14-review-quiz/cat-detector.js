@@ -6,13 +6,13 @@
   and lets them know if they did input a cat or not.
 
   Data In:
-    ???
+    cat
 
   Data Out:
-    ???
+   thank you for the cat
 
   Test Cases:
-    ???
+    cat -> thank you for the cat
 
 
   PS. try the "ask me" button!

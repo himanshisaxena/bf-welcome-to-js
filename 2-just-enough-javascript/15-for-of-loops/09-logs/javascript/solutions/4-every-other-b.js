@@ -2,6 +2,11 @@
 
 let language = 'j a v a s c r i p t ';
 
-let logIt = __;
+let logIt = true;
 
 // do it
+for (let char of language) {
+  if (char !== ' ') {
+    console.log(char);
+  }
+}

@@ -31,15 +31,41 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output;
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  let input = prompt('Please enter a string that starts with a capital letter and ends with a period:');
+
+  if (input === null) {
+    alert('You canceled. Please try again.');
+    continue; // User canceled, prompt again
+  }
+
+  if (input.length < 2) {
+    alert('Input is too short. Please enter a longer string.');
+    continue; // Input is too short, prompt again
+  }
+
+  if (input[0] !== input[0].toUpperCase()) {
+    alert('Input does not start with a capital letter. Please try again.');
+    continue; // Input does not start with a capital letter, prompt again
+  }
+
+  if (input[input.length - 1] !== '.') {
+    alert('Input does not end with a period. Please try again.');
+    continue; // Input does not end with a period, prompt again
+  }
+
+  output = input[0].toLowerCase() + input.slice(1, input.length - 1);
+  break; // Valid input, exit the loop
+}
+
+console.log('output:', output);
 
 /* --- alert the result --- */
 
-console.log('output:', output);
 alert(output);
 
 console.log('--- end program ---');

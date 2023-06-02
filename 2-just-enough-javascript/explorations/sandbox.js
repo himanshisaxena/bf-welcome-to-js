@@ -9,7 +9,7 @@ while (true) {
     console.log('>');
   }
   toggle = !toggle;
+  console.log('all done');
 }
 
 // unreachable code:
-console.log('all done');
