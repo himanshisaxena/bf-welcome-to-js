@@ -4,12 +4,12 @@
 
 let phrase = null;
 while (phrase === null) {
-  phrase = prompt('enter a phrase');
+  phrase = prompt('Enter a phrase');
 }
 
 const keepLetters = confirm(
-  '"ok" to remove everything that is not a letter\n' +
-    '"cancel" to repeat each character',
+  '"Ok" to remove everything that is not a letter\n' +
+    '"Cancel" to repeat each character',
 );
 
 let newPhrase = '';

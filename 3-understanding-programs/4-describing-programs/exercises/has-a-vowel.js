@@ -4,7 +4,7 @@
 
 let characters = null;
 while (characters === null) {
-  characters = prompt('enter some characters');
+  characters = prompt('Enter some characters');
 }
 
 const vowels = 'aeiouAEIOU';

@@ -4,6 +4,10 @@
 
 /* generic
 
-  _a -> __:
+  _a -> input
+  _b -> vowels
+  _c -> message
+  _d -> letter
+  _e -> message
 
 */

@@ -4,18 +4,40 @@
 
 /*
   _a:
-    declaration:
-      init:
-      types:
-      scopes:
-    reads:
-      scopes:
-      checks:
-    assignments:
-      types:
-      scopes:
+    declaration: 
+      init: yes
+      types: number
+      scopes: global
+    reads: 3
+      scopes: glopal, local
+      checks: while, if condition
+    assignments: 0
+      types: number
+      scopes: 
 
+      _b:
+    declaration: 
+      init: yes
+      types: string
+      scopes: global
+    reads: 4
+      scopes: glopal, while
+      checks: while
+    assignments: 1
+      types: string
+      scopes: global
 
+      _c:
+    declaration: 
+      init: yes
+      types: boolean
+      scopes: global
+    reads: 2
+      scopes: else if
+      checks: while
+    assignments: 1
+      types: boolean
+      scopes: if
 */
 
 alert('you will need to enter strings with "e" in the right place');

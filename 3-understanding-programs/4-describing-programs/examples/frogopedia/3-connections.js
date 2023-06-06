@@ -1,7 +1,3 @@
-// #todo
-
-'use strict';
-
 /* 3. Connections
 
   Start finding connections between different lines of code across the program.

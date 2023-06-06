@@ -5,17 +5,50 @@
 /*
   _a:
     declaration:
-      init:
-      types:
-      scopes:
-    reads:
-      scopes:
-      checks:
-    assignments:
-      types:
-      scopes:
+      init: yes
+      types: object
+      scopes: global
+    reads: 3
+      scopes: while
+      checks: xhile, for of
+    assignments: 1
+      types: string
+      scopes: while
 
+_b:
+    declaration:
+      init: yes
+      types: string
+      scopes: global
+    reads: 1
+      scopes: for of
 
+      _c:
+    declaration:
+      init: yes
+      types: boolean
+      scopes: global
+    reads: 1
+      scopes: global
+    assignments: 
+      types: boolean
+      scopes: for of
+
+      _d:
+    declaration:
+      init: yes
+      types: string
+      scopes: for of
+    reads: 1
+      scopes: for of
+
+      _e:
+    declaration:
+      init: yes
+      types: string
+      scopes: for of
+    reads: 1
+      checks: if
 */
 
 let _a = null;

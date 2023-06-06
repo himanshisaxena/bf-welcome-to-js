@@ -4,7 +4,7 @@
 
 let input = null;
 while (input === null) {
-  input = prompt('enter some text, the program will check if it is excited');
+  input = prompt('Enter some text, the program will check if it is excited');
 }
 
 let isExcited = false;

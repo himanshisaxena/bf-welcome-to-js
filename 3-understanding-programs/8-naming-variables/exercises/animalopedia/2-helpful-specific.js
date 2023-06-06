@@ -4,6 +4,8 @@
 
 /* specific
 
-  _a -> _:
+  _a -> animal;
+  _d -> fact
+  _c -> checkFact
 
 */

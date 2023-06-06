@@ -5,12 +5,12 @@
 alert(`Guess 3 phrases in 3 tries
 
   Player 1:
-    enter three phrases
+    Enter three phrases
 
   Player 2:
-    see the three phrases in order
-    then enter them back in order
-    you will get one point for each correct guess
+    See the three phrases in order
+    Then enter them back in order
+    You will get one point for each correct guess
 `);
 
 alert('Player 2: go hide');

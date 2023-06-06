@@ -1,12 +1,20 @@
+'use strict';
+
 // #todo
 
-'use strict';
+/* 
+- if null or empty string => prompt the user again
+- if text doesn't includes f or F => alert the text
+- if text with f, it will replace f with frog => alert the new text
+- if text with F, it will replace F with FROG => alert the new text
+*/
+
 
 /* -- gather user input -- */
 
 let toBeFrogged = null;
 
-while (toBeFrogged === null) {
+while (!toBeFrogged) {
   toBeFrogged = prompt(
     'enter some text to frogify.\n' +
       '- "f" will be replaced with "frog"\n' +

@@ -11,6 +11,7 @@ while (phrase === null) {
   phrase = prompt(
     'enter something with duplicated letters, they will be removed',
   );
+  console.log(phrase);
 }
 
 let previous = '';

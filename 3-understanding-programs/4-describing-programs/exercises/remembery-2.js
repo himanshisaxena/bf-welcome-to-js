@@ -5,10 +5,10 @@
 alert(`Guess 3 secrets in 3 tries
 
   Player 1:
-    enter three secrets
+    Enter three secrets
 
   Player 2:
-    see the three secrets in order
+    See the three secrets in order
     then enter them back in order
     if you get one wrong - game over!
 `);
@@ -51,4 +51,4 @@ if (firstTry === secret1) {
   }
 }
 
-alert('your score: ' + score);
+alert('Your score: ' + score);
