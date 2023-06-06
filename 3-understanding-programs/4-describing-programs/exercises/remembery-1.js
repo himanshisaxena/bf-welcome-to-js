@@ -5,12 +5,12 @@
 alert(`Guess a phrase in 3 tries
 
   Player 1:
-    enter a phrases
+    Enter a phrases
 
   Player 2:
-    see the phrase then has 3 chances to guess it
-    you start with 3 points
-    each wrong guess will lose you a point
+    See the phrase then has 3 chances to guess it
+    You start with 3 points
+    Each wrong guess will lose you a point
 `);
 
 alert('Player 2: go hide');
@@ -38,4 +38,4 @@ if (guess1 !== phrase) {
   }
 }
 
-alert('your points: ' + points);
+alert('Your points: ' + points);

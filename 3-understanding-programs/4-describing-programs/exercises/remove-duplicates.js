@@ -5,7 +5,7 @@
 let phrase = null;
 while (phrase === null) {
   phrase = prompt(
-    'enter something with duplicated letters, they will be removed',
+    'Enter something with duplicated letters, they will be removed',
   );
 }
 

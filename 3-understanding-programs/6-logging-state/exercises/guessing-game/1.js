@@ -10,9 +10,9 @@
 
 const userInput = prompt(
   'Welcome!\n\n' +
-    '"play": begin the game\n' +
+    '"Play": begin the game\n' +
     '"-h": read the instructions\n' +
-    'escape: exit the game',
+    'Escape: exit the game',
 );
 
 if (userInput === '-h') {
@@ -20,7 +20,7 @@ if (userInput === '-h') {
     'This is a two player game.\n\n' +
       'Player 1: enters a secret phrase, and then a clue.\n' +
       'Player 2: is shown the clue and must guess the phrase.\n\n' +
-      'you can end the game at any point by canceling',
+      'You can end the game at any point by canceling',
   );
 } else if (userInput === 'play') {
   let winner = 'no one';
@@ -41,7 +41,7 @@ if (userInput === '-h') {
     }
 
     if (clue === null) {
-      alert('good bye');
+      alert('Good bye');
     } else {
       alert(
         'Player 1: you entered ...\n\n' +
@@ -54,7 +54,7 @@ if (userInput === '-h') {
           '"',
       );
 
-      alert('now go get Player 2');
+      alert('Now go get Player 2');
 
       let guess = '';
       while (guess === '') {
@@ -63,7 +63,7 @@ if (userInput === '-h') {
             '- "' +
             clue +
             '"\n\n' +
-            'what do you think the secret phrase is?',
+            'What do you think the secret phrase is?',
         );
       }
 

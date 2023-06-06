@@ -6,16 +6,16 @@ let userInput = '';
 
 let isTooShort = true;
 while (isTooShort) {
-  userInput = prompt('enter anything longer than 5 characters');
+  userInput = prompt('Enter anything longer than 6 characters');
 
   if (userInput === null) {
-    alert('there is no escape');
+    alert('There is no escape');
     continue;
   }
 
-  isTooShort = userInput.length <= 5;
+  isTooShort = userInput.length <= 6;
   if (isTooShort) {
-    alert('too short');
+    alert('Too short');
   }
 }
 

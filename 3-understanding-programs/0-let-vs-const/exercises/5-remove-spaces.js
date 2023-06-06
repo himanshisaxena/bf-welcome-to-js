@@ -1,3 +1,4 @@
+
 // #todo
 
 'use strict';
@@ -11,14 +12,14 @@ while (input === null) {
 }
 
 let spaceless = '';
-for (let character of input) {
+for (const character of input) {
   if (character !== ' ') {
     spaceless = spaceless + character;
     console.log(spaceless);
   }
 }
 
-let message = 'before: ' + input + '\nafter: ' + spaceless;
+const message = 'before: ' + input + '\nafter: ' + spaceless;
 console.log(message);
 
 alert(message);

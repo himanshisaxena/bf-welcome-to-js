@@ -11,28 +11,28 @@ let phrase = '';
 
 let userConfirmedPhrase = false;
 while (!userConfirmedPhrase) {
-  phrase = prompt('enter a phrase to search');
+  phrase = prompt('Enter a phrase to search');
   if (phrase === null) {
     continue;
   }
 
-  userConfirmedPhrase = confirm('is this correct: "' + phrase + '"');
+  userConfirmedPhrase = confirm('Is this correct: "' + phrase + '"');
 }
 
-const caseSensitive = confirm('do you want a case-sensitive search?');
+const caseSensitive = confirm('Do you want a case-sensitive search?');
 
 let query = '';
 
 let userConfirmedQuery = false;
 while (!userConfirmedQuery) {
   query = prompt(
-    'enter a search query, this program will check if it exists in your phrase',
+    'Enter a search query, this program will check if it exists in your phrase',
   );
   if (query === null) {
     continue;
   }
 
-  userConfirmedQuery = confirm('is this correct: "' + query + '"');
+  userConfirmedQuery = confirm('Is this correct: "' + query + '"');
 }
 
 let phraseIncludesQuery;

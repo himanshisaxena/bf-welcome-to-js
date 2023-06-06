@@ -4,17 +4,17 @@
 
 let userInput = '';
 while (true) {
-  userInput = prompt('enter your name:');
+  userInput = prompt('Enter your name:');
 
   if (userInput === null || userInput === '') {
-    alert('nothing is not a name');
+    alert('Nothing is not a name');
     continue;
   }
 
-  const userDidConfirm = confirm('is this your name: "' + userInput + '"');
+  const userDidConfirm = confirm('Is this your name: "' + userInput + '"');
   if (userDidConfirm) {
     break;
   }
 }
 
-alert('your name is: "' + userInput + '"');
+alert('Your name is: "' + userInput + '"');

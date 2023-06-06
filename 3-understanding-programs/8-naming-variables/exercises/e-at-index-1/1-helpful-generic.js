@@ -4,6 +4,9 @@
 
 /* generic
 
-  _a -> __:
+  _a -> score
+  _b -> entries
+  _c -> check
+  _d -> 
 
 */

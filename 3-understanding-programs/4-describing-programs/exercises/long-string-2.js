@@ -5,15 +5,15 @@
 let anything = '';
 
 while (true) {
-  anything = prompt('enter anything longer than 5 characters');
+  anything = prompt('Enter anything longer than 5 characters');
 
   if (anything === null) {
-    alert('there is no escape');
+    alert('There is no escape');
     continue;
   }
 
-  if (anything.length <= 5) {
-    alert('too short');
+  if (anything.length <= 6) {
+    alert('Too short');
     continue;
   }
 
