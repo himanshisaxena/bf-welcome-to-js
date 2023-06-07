@@ -8,7 +8,7 @@
       scopes: global
     reads: 5
       scopes: glopal, local
-      checks: while
+      checks: while llop
     assignments: 1
       types: string
       scopes: global
@@ -20,7 +20,7 @@
       scopes: global
     reads: 4
       scopes: glopal, local
-      checks: while
+      checks: while loop
     assignments: 1
       types: string
       scopes: global
@@ -31,11 +31,11 @@
       types: boolean
       scopes: global
     reads: 2
-      scopes: else if
-      checks: while
+      scopes: else if condition
+      checks: while loop
     assignments: 1
       types: boolean
-      scopes: if
+      scopes: if condition
 */
 
 alert(

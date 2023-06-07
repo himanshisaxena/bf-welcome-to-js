@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -10,10 +8,10 @@
       scopes: global
     reads: 3
       scopes: glopal, local
-      checks: while, if condition
-    assignments: 0
+      checks: while loop, if condition
+    assignments: 1
       types: number
-      scopes: 
+      scopes: global
 
       _b:
     declaration: 
@@ -21,8 +19,8 @@
       types: string
       scopes: global
     reads: 4
-      scopes: glopal, while
-      checks: while
+      scopes: glopal, while loop
+      checks: while loop
     assignments: 1
       types: string
       scopes: global
@@ -33,11 +31,11 @@
       types: boolean
       scopes: global
     reads: 2
-      scopes: else if
-      checks: while
+      scopes: else if condition
+      checks: while loop
     assignments: 1
       types: boolean
-      scopes: if
+      scopes: if condition
 */
 
 alert('you will need to enter strings with "e" in the right place');
