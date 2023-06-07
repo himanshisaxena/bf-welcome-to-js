@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -10,9 +8,9 @@
 
 const userInput = prompt(
   'Welcome!\n\n' +
-    '"Play": begin the game\n' +
+    '"play": begin the game\n' +
     '"-h": read the instructions\n' +
-    'Escape: exit the game',
+    'escape: exit the game',
 );
 
 if (userInput === '-h') {
@@ -20,7 +18,7 @@ if (userInput === '-h') {
     'This is a two player game.\n\n' +
       'Player 1: enters a secret phrase, and then a clue.\n' +
       'Player 2: is shown the clue and must guess the phrase.\n\n' +
-      'You can end the game at any point by canceling',
+      'you can end the game at any point by canceling',
   );
 } else if (userInput === 'play') {
   let winner = 'no one';
@@ -41,7 +39,7 @@ if (userInput === '-h') {
     }
 
     if (clue === null) {
-      alert('Good bye');
+      alert('good bye');
     } else {
       alert(
         'Player 1: you entered ...\n\n' +
@@ -54,7 +52,7 @@ if (userInput === '-h') {
           '"',
       );
 
-      alert('Now go get Player 2');
+      alert('now go get Player 2');
 
       let guess = '';
       while (guess === '') {
@@ -63,9 +61,11 @@ if (userInput === '-h') {
             '- "' +
             clue +
             '"\n\n' +
-            'What do you think the secret phrase is?',
+            'what do you think the secret phrase is?',
         );
       }
+
+      console.log(guess);
 
       if (guess === null) {
         alert('good bye');
@@ -78,7 +78,6 @@ if (userInput === '-h') {
         const revealTheSecret = confirm(
           'Nope, not correct. \n\ndo you want to know the secret?',
         );
-
         if (revealTheSecret) {
           alert(
             'The secret was:\n\n' +
@@ -88,7 +87,8 @@ if (userInput === '-h') {
               '"' +
               '\n\n' +
               'thanks for playing, see ya',
-          );
+          ); 
+          console.log(secretPhrase);
         } else {
           alert('better luck next time');
         }
@@ -96,6 +96,7 @@ if (userInput === '-h') {
     }
   }
   alert('game over. the winner is: ' + winner);
+  console.log(winner);
 } else if (userInput === null) {
   alert('good bye');
 } else {

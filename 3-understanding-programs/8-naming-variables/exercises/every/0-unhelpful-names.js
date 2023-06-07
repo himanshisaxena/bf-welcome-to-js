@@ -1,54 +1,66 @@
-// #todo
-
 'use strict';
 
 /*
   _a:
     declaration:
-      init: yes
-      types: object
-      scopes: global
-    reads: 3
-      scopes: while
-      checks: xhile, for of
-    assignments: 1
-      types: string
-      scopes: while
+      init: null
+      types: null
+      scopes: Global 
+    reads:
+      scopes: while loop
+      checks: while condition
+    assignments:
+      types: null
+      scopes: while loop
 
-_b:
+  _b:
     declaration:
       init: yes
       types: string
-      scopes: global
-    reads: 1
-      scopes: for of
+      scopes: Global 
+    reads:
+      scopes: -
+      checks: -
+    assignments:
+      types: -
+      scopes: -
 
-      _c:
+  _c:
     declaration:
       init: yes
       types: boolean
-      scopes: global
-    reads: 1
-      scopes: global
-    assignments: 
+      scopes: Global 
+    reads:
+      scopes: for of loop
+      checks: for of loop
+    assignments:
       types: boolean
-      scopes: for of
+      scopes: for of loop
 
-      _d:
+   _d:
     declaration:
       init: yes
-      types: string
-      scopes: for of
-    reads: 1
-      scopes: for of
+      types: Unknown
+      scopes: For of loop
+    reads:
+      scopes: For of loop
+      checks: For of loop
+    assignments:
+      types: -
+      scopes: For of loop
 
-      _e:
+  _e:
     declaration:
       init: yes
-      types: string
-      scopes: for of
-    reads: 1
-      checks: if
+      types: boolean
+      scopes: For of loop
+    reads:
+      scopes: For of loop
+      checks: For of loop
+    assignments:
+      types: -
+      scopes: For of loop
+
 */
 
 let _a = null;
