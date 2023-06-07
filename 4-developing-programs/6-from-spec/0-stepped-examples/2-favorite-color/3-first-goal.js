@@ -26,22 +26,6 @@
 // Data In:     null or a string
 // Data After:  a non-empty string
 
-let input = '';
-
-while (true) {
-  input = prompt('enter a word');
-  console.log(input);
-
-  if (input === null) {
-    alert('no canceling!');
-  } else if (input === '') {
-    alert('empty input is not allowed');
-  } else {
-    break;
-  }
-}
-console.log(input);
-
 /* --- create the final message --- */
 // Data Before: a non-empty string
 // Data After:  a message describing the string as long or short
@@ -56,4 +40,28 @@ console.log(input);
 /* --- display the message for the user --- */
 // Data Out:    a message describing the string as long or short
 
-// alert(message)
+
+/* Favorite Color */
+
+/* --- gather user input --- */
+let input = null;
+
+while (!input || input.length === 0) {
+  input = prompt('Enter your favorite word');
+
+  if (input === null) {
+    alert('No canceling!');
+  }
+}
+
+/* --- create the final message --- */
+let message = '"' + input + '"';
+
+if (input.length >= 7) {
+  message += ' is a long word';
+} else {
+  message += ' is a short word';
+}
+
+/* --- display the message for the user --- */
+alert(message);

@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* is excited
@@ -34,21 +32,19 @@
 
 let input = null;
 while (input === null) {
-  input = prompt(
-    'enter some text, the program will check if it has any spaces',
-  );
+input = prompt('Enter some text. The program will check if it contains an exclamation mark');
 }
 
 let isExcited = false;
 for (const char of input) {
-  if (char !== '!') {
-    isExcited = true;
-    break;
-  }
+if (char === '!') {
+isExcited = true;
+break;
+}
 }
 
 if (isExcited) {
-  alert('"' + input + '" is excited');
+alert('"' + input + '" is excited');
 } else {
-  alert('"' + input + '" is not excited');
+alert('"' + input + '" is not excited');
 }

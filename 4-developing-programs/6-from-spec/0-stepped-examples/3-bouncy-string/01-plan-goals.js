@@ -37,3 +37,56 @@
 
 /* --- display the bouncy string --- */
 // Data Out:      a bouncy string
+
+
+/* Bouncy String */
+
+/* --- gather input from the user --- */
+let input = '';
+
+while (true) {
+  input = prompt('Enter a string of letters');
+
+  if (input === null) {
+    alert('No canceling!');
+  } else if (input.trim() === '') {
+    alert('Empty input is not allowed');
+  } else if (!isLetterString(input)) {
+    alert('Invalid input! Only letters are allowed');
+  } else {
+    break;
+  }
+}
+
+/* --- bouncify the string --- */
+let bouncyString = '';
+
+for (let i = 0; i < input.length; i++) {
+  if (i % 2 === 0) {
+    bouncyString += input[i].toLowerCase();
+  } else {
+    bouncyString += input[i].toUpperCase();
+  }
+}
+
+/* --- display the bouncy string --- */
+alert('Bouncy String: ' + bouncyString);
+
+/* --- helper function to check if a string contains only letters --- */
+function isLetterString(str) {
+  for (let char of str) {
+    if (!isLetter(char)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+/* --- helper function to check if a character is a letter --- */
+function isLetter(char) {
+  let charCode = char.charCodeAt(0);
+  return (
+    (charCode >= 65 && charCode <= 90) || // uppercase letters
+    (charCode >= 97 && charCode <= 122) // lowercase letters
+  );
+}

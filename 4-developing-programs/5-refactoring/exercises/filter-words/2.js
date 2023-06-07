@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -39,8 +37,9 @@ for (const character of sentence) {
     );
     if (keep) {
       newSentence = newSentence + character + nextWord;
-    }
+    } 
     nextWord = '';
+    continue;
   } else {
     nextWord = nextWord + character;
   }

@@ -32,3 +32,18 @@
 //  Data Out:  an excited string
 
 // alert(output)
+
+/* Be Excited */
+
+/* --- get a string from the user --- */
+let input = null;
+
+while (input === null) {
+  input = prompt('Enter something');
+}
+
+/* --- make the string excited --- */
+const output = input + '!';
+
+/* --- display the string to the user --- */
+alert(output);
