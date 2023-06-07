@@ -12,7 +12,7 @@
 
 */
 
-/* ---   ?   --- */
+/* ---   Prompt for input   --- */
 
 let letters = null;
 
@@ -20,7 +20,7 @@ while (letters === null) {
   letters = prompt('enter some letters');
 }
 
-/* ---   ?   --- */
+/* ---   Remove vowels   --- */
 
 let noVowels = '';
 
@@ -32,6 +32,6 @@ for (let character of letters) {
   }
 }
 
-/* ---   ?   --- */
+/* ---   Display result   --- */
 
 alert(letters + ' -> ' + noVowels);

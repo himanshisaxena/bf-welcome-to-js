@@ -1,22 +1,21 @@
-// #todo
-
 'use strict';
 
 /*
 
-
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message
 
-  Test Cases:
+  Test Cases: hello -> hello to you too!
 
 */
 
-// input <- ''
+let input = '';
 
-// WHILE: input !== 'hello'
-//   input <- prompt('say hello')
-// :END WHILE
+while (input !== 'hello') {
+  input = prompt('say hello');
+}
 
-// alert('hello to you too!')
+alert('hello to you too!');

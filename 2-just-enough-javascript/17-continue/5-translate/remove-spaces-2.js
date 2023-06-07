@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -13,7 +11,7 @@
 
 */
 
-/* ---   ?   --- */
+/* ---   Prompt for input   --- */
 
 let input = null;
 
@@ -35,7 +33,7 @@ while(true){
   }
 
 
-/* ---   ?   --- */
+/* ---   Remove spaces   --- */
 
 let spaceless = '';
 
@@ -45,6 +43,6 @@ for( let char of input){
   }
 }
 
-/* ---   ?   --- */
+/* ---   Display result   --- */
 
 alert(input + ' -> ' + spaceless);

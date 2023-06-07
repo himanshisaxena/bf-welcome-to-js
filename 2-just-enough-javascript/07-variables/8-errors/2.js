@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // fix the error in this code

@@ -1,34 +1,29 @@
-// #todo
-
 'use strict';
 
 /*
 
-
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message with the input (string)
 
-  Test Cases:
+  Test Cases: animal -> animal
 
 */
 
-/* ---   ?   --- */
+let input = '';
+let prompting = true;
 
-// input <- ''
+while (prompting) {
+  input = prompt('enter something longer than 4 characters, or "cancel" to leave');
 
-// prompting <- true
+  if (input === null) {
+    prompting = false;
+    input = 'you canceled';
+  } else if (input.length > 4) {
+    prompting = false;
+  }
+}
 
-// WHILE: prompting
-//   input <- prompt('enter something longer than 4 characters, or "cancel" to leave')
-//   IF: input === null
-//     prompting <- false
-//     input <- 'you canceled'
-//   ELSE: IF: input.length > 4
-//     prompting <- false
-//   :END IF
-// :END WHILE
-
-/* ---   ?   --- */
-
-// alert(input)
+alert(input);

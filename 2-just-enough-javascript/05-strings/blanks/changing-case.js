@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // fill in the _ to complete the exercises

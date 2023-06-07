@@ -1,37 +1,31 @@
-// #todo
-
 'use strict';
 
 /*
 
-
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message with repeated input (string)
 
-  Test Cases:
+  Test Cases: zz ->
+              zz
+              zz
 
 */
 
-/* ---   ?   --- */
+let input = null;
 
-// input <- null
+while (input === null) {
+  input = prompt('enter some text');
+}
 
-// WHILE: input === null
-//   input <- prompt('enter some text')
-// :END WHILE
+let repeated = '';
+let i = 0;
 
-/* ---   ?   --- */
+while (i < input.length) {
+  repeated += '\n' + input;
+  i++;
+}
 
-// repeated <- ''
-
-// i <- 0
-
-// WHILE: i < input.length
-//   repeated <- repeated + '\n' + input
-//   i <- i + 1
-// :END WHILE
-
-/* ---   ?   --- */
-
-// alert(repeated)
+alert(repeated);

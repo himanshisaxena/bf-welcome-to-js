@@ -1,38 +1,30 @@
-// #todo
-
 'use strict';
 
-/* Full Name
-
+/*
 
   Data In:
+    - User input for first name (string)
+    - User input for last name (string)
 
   Data Out:
+    - Alert with the full name (string)
 
-  Test Cases:
+  Test Cases: Himanshi --> Himanshi
 
 */
 
-/* ---  ?  --- */
+let firstName = null;
 
-// firstName <- null
+while (firstName === null) {
+  firstName = prompt('enter a first name');
+}
 
-// WHILE: firstName === null
-//   firstName <- prompt('enter a first name')
-// :END WHILE
+let lastName = null;
 
-/* ---  ?  --- */
+while (lastName === null) {
+  lastName = prompt('enter a last name');
+}
 
-// lastName <- null
+let fullName = firstName + ' ' + lastName;
 
-// WHILE: lastName === null
-//   lastName <- prompt('enter a last name')
-// :END WHILE
-
-/* ---  ?  --- */
-
-// fullName <- firstName + ' ' + lastName
-
-/* ---  ?  --- */
-
-// alert(fullName)
+alert(fullName);

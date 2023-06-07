@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -20,11 +18,45 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  // Prompt the user to enter a single character or confirm completion
+  let input = prompt('Enter a single character to add to the output or confirm completion by clicking "Cancel" or entering an empty string');
+
+  /* --- input validation and handling --- */
+
+  // If the user cancels the prompt
+  if (input === null) {
+    alert('Operation canceled. Please continue entering characters or confirm completion.');
+    continue; // Continue to the next iteration of the loop
+  }
+
+  // If the input is an empty string
+  if (input === '') {
+    alert('Empty input. Please enter a single character or confirm completion.');
+    continue; // Continue to the next iteration of the loop
+  }
+
+  // If the input is longer than 1 character
+  if (input.length > 1) {
+    alert('Invalid input. Please enter a single character or confirm completion.');
+    continue; // Continue to the next iteration of the loop
+  }
+
+  // If the input is a single character, append it to the output
+  output += input;
+
+  // Ask the user if they want to continue or confirm completion
+  let confirm = prompt('Do you want to continue entering characters? Enter "Y" to continue or any other key to confirm completion.');
+
+  // If the user confirms completion, break out of the loop
+  if (confirm !== 'Y' && confirm !== 'y') {
+    break;
+  }
+}
 
 /* --- alert the result --- */
 

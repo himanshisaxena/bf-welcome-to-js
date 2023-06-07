@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* Challenge: write this program using at least 1 `break`
@@ -31,11 +29,36 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  let input = prompt('Enter input that starts with a capital letter and ends with a period');
+
+  if (input === null) {
+    alert('Input canceled. Please try again.');
+    continue; // User canceled, prompt again
+  }
+
+  if (input.length < 2) {
+    alert('Input is too short. Please try again.');
+    continue; // Input is too short, prompt again
+  }
+
+  if (input[0] !== input[0].toUpperCase()) {
+    alert('Input does not start with a capital letter. Please try again.');
+    continue; // Input does not start with a capital letter, prompt again
+  }
+
+  if (input[input.length - 1] !== '.') {
+    alert('Input does not end with a period. Please try again.');
+    continue; // Input does not end with a period, prompt again
+  }
+
+  output = input[0].toLowerCase() + input.slice(1, -1);
+  break; // Valid input, exit the loop
+}
 
 /* --- alert the result --- */
 
@@ -43,16 +66,3 @@ console.log('output:', output);
 alert(output);
 
 console.log('--- end program ---');
-
-/*
-  checklist:
-    [ ] the code is formatted
-    [ ] linting check passes
-    [ ] variable names are clear and helpful
-    [ ] each line of code is explained in a comment above that line
-      - use full sentences and correct JS vocabulary
-    [ ] the program runs
-    [ ] the program has no errors
-    [ ] all of the test cases work
-    [ ] you tested strange inputs that could break your program (edge cases)
-*/

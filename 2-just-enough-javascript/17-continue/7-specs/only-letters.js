@@ -1,5 +1,5 @@
-// #todo
 'use strict';
+
 /*
   a user can provide input that contains only uppercase and lowercase letters
     - given the user cancels, they will be prompted again
@@ -24,7 +24,9 @@ let output = '';
 /* --- create final output --- */
 
 while (true) {
-  const userInput = prompt('Please enter a string containing only uppercase and lowercase letters:');
+  const userInput = prompt(
+    'Please enter a string containing only uppercase and lowercase letters:',
+  );
   if (userInput === null || userInput === '') {
     continue;
   }
@@ -48,7 +50,6 @@ while (true) {
 console.log('output:', output);
 alert(output);
 console.log('--- end program ---');
-
 
 /*
   checklist:

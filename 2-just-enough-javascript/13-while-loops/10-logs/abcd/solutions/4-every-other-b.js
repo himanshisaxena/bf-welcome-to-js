@@ -4,9 +4,8 @@ let letters = 'a b c d ';
 
 let index = 0;
 while (index < letters.length) {
-  let currentChar = letters[index];
-  if (currentChar !== ' ') {
-    console.log("'" + currentChar + "'");
+  if (letters[index] !== ' ') {
+    console.log(letters[index]);
   }
   index++;
 }

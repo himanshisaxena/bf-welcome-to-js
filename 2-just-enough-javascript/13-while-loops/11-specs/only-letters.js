@@ -1,4 +1,3 @@
-// #todo
 'use strict';
 /*
   a user can provide input that contains only uppercase and lowercase letters
