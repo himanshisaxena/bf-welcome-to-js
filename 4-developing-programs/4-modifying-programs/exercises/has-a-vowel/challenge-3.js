@@ -1,9 +1,7 @@
-// #todo
-
 'use strict';
 
 /*
-  modify this program so it uses .toLowerCase to check for consonants
+  modify this program so it uses .toLowerCase to check consonants
 
   you can do this by changing the name of one variable, one string, and a conditional check
     and of course the user's instructions
@@ -14,18 +12,18 @@ while (characters === null) {
   characters = prompt('enter some characters');
 }
 
-const vowels = 'aeiouAEIOU';
+const consonant = 'bcdfghjklmnpqrstvwxyz';
 
-let hasAVowel = false;
+let hasAConsonant = false;
 for (const char of characters) {
-  if (vowels.includes(char)) {
-    hasAVowel = true;
+  if (consonant.includes(char)) {
+    hasAConsonant = true;
     break;
   }
 }
 
-if (hasAVowel) {
-  alert('"' + characters + '" has at least one vowel');
+if (hasAConsonant) {
+  alert('"' + characters + '" has at least one lowerCase consonant');
 } else {
-  alert('"' + characters + '" has no vowels');
+  alert('"' + characters + '" has no lowerCase consonants');
 }

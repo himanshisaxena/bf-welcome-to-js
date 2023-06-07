@@ -21,3 +21,24 @@
       'jello' -> '"jello" is a short word'
       'hi' -> '"hi" is a short word'
 */
+
+/* Favorite Color */
+
+/* --- get a word from the user --- */
+let word = '';
+
+while (word.length === 0) {
+  word = prompt('Enter your favorite word');
+}
+
+/* --- determine if the word is long or short --- */
+let message;
+
+if (word.length >= 7) {
+  message = `"${word}" is a long word`;
+} else {
+  message = `"${word}" is a short word`;
+}
+
+/* --- display the message to the user --- */
+alert(message);

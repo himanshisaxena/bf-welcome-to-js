@@ -12,3 +12,19 @@
     'JS'    -> 'JS!'
     'hello' -> 'hello!'
 */
+
+
+function beExcited() {
+  let userInput = prompt("Enter some text:");
+
+  if (userInput === null) {
+    beExcited(); // user canceled, prompt again
+  } else if (typeof userInput === 'string') {
+    let excitedText = userInput + '!';
+    alert(excitedText);
+  } else {
+    beExcited(); // invalid input, prompt again
+  }
+}
+
+beExcited();

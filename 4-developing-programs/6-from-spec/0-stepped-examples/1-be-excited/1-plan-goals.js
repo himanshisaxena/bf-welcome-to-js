@@ -23,3 +23,29 @@
 
 /* --- display the string to the user --- */
 //  Data Out:  an excited string
+
+function getInputString() {
+  let userInput = prompt('Enter some text:');
+  return userInput;
+}
+
+function makeExcited(text) {
+  return text + '!';
+}
+
+function displayOutput(text) {
+  alert(text);
+}
+
+function beExcited() {
+  let inputString = getInputString();
+
+  if (inputString === null) {
+    beExcited(); // user canceled, prompt again
+  } else {
+    let excitedString = makeExcited(inputString);
+    displayOutput(excitedString);
+  }
+}
+
+beExcited();

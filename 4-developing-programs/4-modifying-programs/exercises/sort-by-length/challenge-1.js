@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -8,24 +6,33 @@
 */
 
 alert(
-  'enter many strings, they will be sorted by length.\n\n' +
-    'when you are done entering strings you can "cancel" or "escape"',
+  'Enter many strings, they will be sorted by length.\n\n' +
+    'When you are done entering strings, you can click "Cancel" or "Escape".',
 );
 
-let shortStrings = 'short:';
-let mediumStrings = 'medium:';
-let longStrings = 'long:';
+let shortStrings = 'Short:';
+let mediumStrings = 'Medium:';
+let longStrings = 'Long:';
 
 while (true) {
-  const input = prompt('enter something');
+  let input = prompt('Enter something');
 
   if (input === null) {
     break;
   }
 
-  if (input.length < 5) {
-    shortStrings = shortStrings + '\n- "' + input + '"';
-  } else if (input.length < 10) {
+  while (input.length < 5) {
+    input = prompt('String is too short. Enter something longer');
+    if (input === null) {
+      break;
+    }
+  }
+
+  if (input === null) {
+    break;
+  }
+
+  if (input.length < 10) {
     mediumStrings = mediumStrings + '\n- "' + input + '"';
   } else {
     longStrings = longStrings + '\n- "' + input + '"';

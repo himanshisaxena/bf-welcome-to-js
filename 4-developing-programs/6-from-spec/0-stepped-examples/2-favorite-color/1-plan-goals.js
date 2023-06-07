@@ -30,5 +30,28 @@
 // Data Before: a non-empty string
 // Data After:  a message describing the string as long or short
 
+
+/* Favorite Color */
+
+/* --- gather user input --- */
+let word = null;
+
+while (!word || word.length === 0) {
+  word = prompt('Enter your favorite word');
+}
+
+/* --- create the final message --- */
+let message;
+
+if (word.length >= 7) {
+  message = `"${word}" is a long word`;
+} else {
+  message = `"${word}" is a short word`;
+}
+
+/* --- display the message for the user --- */
+alert(message);
+
+
 /* --- display the message for the user --- */
 // Data Out:    a message describing the string as long or short

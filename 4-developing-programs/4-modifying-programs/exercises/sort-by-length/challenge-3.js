@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -7,16 +5,16 @@
 */
 
 alert(
-  'enter many strings, they will be sorted by length.\n\n' +
-    'when you are done entering strings you can "cancel" or "escape"',
+  'Enter many strings, they will be sorted by length.\n\n' +
+    'When you are done entering strings, you can click "Cancel" or "Escape".',
 );
 
-let shortStrings = 'short:';
-let mediumStrings = 'medium:';
-let longStrings = 'long:';
+let shortStrings = 'Short:';
+let mediumStrings = 'Medium:';
+let longStrings = 'Long:';
 
 while (true) {
-  const input = prompt('enter something');
+  let input = prompt('Enter something');
 
   if (input === null) {
     break;
@@ -31,4 +29,7 @@ while (true) {
   }
 }
 
-alert(shortStrings + '\n\n' + mediumStrings + '\n\n' + longStrings);
+// Reverse the order of the strings
+let sortedStrings = longStrings + '\n\n' + mediumStrings + '\n\n' + shortStrings;
+
+alert(sortedStrings);

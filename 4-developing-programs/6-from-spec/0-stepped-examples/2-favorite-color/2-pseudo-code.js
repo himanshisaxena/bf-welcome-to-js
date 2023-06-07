@@ -54,3 +54,33 @@
 // Data Out:    a message describing the string as long or short
 
 // alert(message)
+
+
+/* Favorite Color */
+
+/* --- gather user input --- */
+let input = '';
+
+while (true) {
+  input = prompt('Enter a word');
+
+  if (input === null) {
+    alert('No canceling!');
+  } else if (input === '') {
+    alert('Empty input is not allowed');
+  } else {
+    break;
+  }
+}
+
+/* --- create the final message --- */
+let message = '"' + input + '"';
+
+if (input.length >= 7) {
+  message += ' is a long word';
+} else {
+  message += ' is a short word';
+}
+
+/* --- display the message for the user --- */
+alert(message);

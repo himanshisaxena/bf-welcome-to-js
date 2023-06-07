@@ -35,3 +35,30 @@
 /*
   display the new string to the user
 */
+
+function getInputString() {
+  let userInput;
+  while (true) {
+    userInput = prompt("Enter some text:");
+    if (userInput !== null) {
+      break; // exit the loop if a non-null string is provided
+    }
+  }
+  return userInput;
+}
+
+function makeExcited(text) {
+  return text + '!';
+}
+
+function displayOutput(text) {
+  alert(text);
+}
+
+function beExcited() {
+  let inputString = getInputString();
+  let excitedString = makeExcited(inputString);
+  displayOutput(excitedString);
+}
+
+beExcited();
