@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // your answers should only include strings and +

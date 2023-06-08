@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /* Challenge: write this program using at least 1 `break`
@@ -24,11 +22,33 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  let input = prompt('Enter input that is 10 characters long');
+
+  if (input === null) {
+    alert('Input canceled. Please try again.');
+    continue; // User canceled, prompt again
+  }
+
+  if (input.length < 10) {
+    let remainingChars = 10 - input.length;
+    alert(`Input is too short. Please add ${remainingChars} more character(s).`);
+    continue; // Input is too short, prompt again
+  }
+
+  if (input.length > 10) {
+    let extraChars = input.length - 10;
+    alert(`Input is too long. Please remove ${extraChars} character(s).`);
+    continue; // Input is too long, prompt again
+  }
+
+  output = input;
+  break; // Valid input, exit the loop
+}
 
 /* --- alert the result --- */
 
@@ -36,16 +56,3 @@ console.log('output:', output);
 alert(output);
 
 console.log('--- end program ---');
-
-/*
-  checklist:
-    [ ] the code is formatted
-    [ ] linting check passes
-    [ ] variable names are clear and helpful
-    [ ] each line of code is explained in a comment above that line
-      - use full sentences and correct JS vocabulary
-    [ ] the program runs
-    [ ] the program has no errors
-    [ ] all of the test cases work
-    [ ] you tested strange inputs that could break your program (edge cases)
-*/

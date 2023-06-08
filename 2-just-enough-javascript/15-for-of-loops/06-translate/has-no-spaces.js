@@ -5,14 +5,14 @@
 
   Data In: user input
 
-  Data Out: "Milenka" has no spaces
+  Data Out: "Himanshi" has no spaces
 
-  Test Cases: Milenka -> "Milenka" has no spaces
+  Test Cases: Himanshi -> "Himanshi" has no spaces
               I love life -> "I love life" has at least one space
 
 */
 
-/* ---   ?   --- */
+/* --- Get user input --- */
 
 let input = null;
 
@@ -22,7 +22,7 @@ while (input === null) {
   );
 }
 
-/* ---   ?   --- */
+/* --- Check if input has no spaces --- */
 
 let noSpaces = true;
 
@@ -33,7 +33,7 @@ for (let letter of input) {
   }
 }
 
-/* ---   ?   --- */
+/* --- Create message based on the presence of spaces --- */
 
 let message = '';
 
@@ -43,6 +43,6 @@ if (noSpaces) {
   message = '"' + input + '" has at least one space';
 }
 
-/* ---   ?   --- */
+/* --- Display the message --- */
 
 alert(message);

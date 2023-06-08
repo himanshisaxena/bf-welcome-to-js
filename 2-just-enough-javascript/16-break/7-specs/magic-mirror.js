@@ -1,3 +1,5 @@
+'use strict'
+
 console.log('--- begin program ---');
 
 /* --- gather user input --- */
@@ -29,11 +31,11 @@ let output = '';
 
 for (let i = 0; i < input.length; i++) {
   const char = input[i];
-  if (/[a-zA-Z]/.test(char)) {
+  if (isLetter(char)) {
     output += char;
   }
 }
-output += '|' + output.split('').reverse().join('');
+output += '|' + reverseString(output);
 
 /* --- alert the result --- */
 
@@ -41,3 +43,19 @@ console.log('output:', output);
 alert(output);
 
 console.log('--- end program ---');
+
+/* --- helper function to check if a character is a letter --- */
+
+function isLetter(char) {
+  return (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z');
+}
+
+/* --- helper function to reverse a string --- */
+
+function reverseString(str) {
+  let reversed = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}

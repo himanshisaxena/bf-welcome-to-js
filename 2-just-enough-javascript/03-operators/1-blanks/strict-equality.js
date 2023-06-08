@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // your answers must include ===, but can use any type

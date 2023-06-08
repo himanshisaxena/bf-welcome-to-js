@@ -2,31 +2,28 @@
 
 /*
 
-
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message
 
-  Test Cases:
+  Test Cases: hello -> hello to you too!
 
 */
 
-/* ---   ?   --- */
+let input = null;
 
-// input <- null
-// WHILE: input === null
-//   input <- prompt('say hello')
-// :END WHILE
+while (input === null) {
+  input = prompt('say hello');
+}
 
-/* ---   ?   --- */
+let message = '';
 
-// message <- ''
-// IF: input === 'hello'
-//   message <- 'hello to you too!'
-// ELSE:
-//   message <- 'good bye'
-// :END IF
+if (input === 'hello') {
+  message = 'hello to you too!';
+} else {
+  message = 'good bye';
+}
 
-/* ---   ?   --- */
-
-// alert(message)
+alert(message);

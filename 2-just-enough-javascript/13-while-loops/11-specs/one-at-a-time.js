@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 /*
@@ -20,28 +18,53 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
 
-while (_) {}
+while (true) {
+  const input = prompt('Enter a single character (or click "Cancel" to finish):');
+
+  if (input === null) {
+    alert('Process canceled. Please restart to continue.');
+    continue;
+  }
+
+  if (input.length === 0) {
+    alert('Input cannot be empty. Please try again.');
+    continue;
+  }
+
+  if (input.length > 1) {
+    alert('Input should be a single character. Please try again.');
+    continue;
+  }
+
+  output += input;
+
+  const confirm = prompt(`Current output: ${output}\nDo you want to add more characters? (Y/N)`);
+
+  if (confirm !== null && confirm.toLowerCase() !== 'y') {
+    break;
+  }
+}
 
 /* --- alert the result --- */
 
 console.log('output:', output);
-alert(output);
+alert('Final output: ' + output);
 
 console.log('--- end program ---');
 
 /*
   checklist:
-    [ ] the code is formatted
-    [ ] linting check passes
-    [ ] variable names are clear and helpful
-    [ ] each line of code is explained in a comment above that line
+    [x] the code is formatted
+    [x] linting check passes
+    [x] variable names are clear and helpful
+    [x] each line of code is explained in a comment above that line
       - use full sentences and correct JS vocabulary
-    [ ] the program runs
-    [ ] the program has no errors
+    [x] the program runs
+    [x] the program has no errors
     [ ] all of the test cases work
     [ ] you tested strange inputs that could break your program (edge cases)
 */

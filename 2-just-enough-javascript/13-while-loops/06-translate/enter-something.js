@@ -1,36 +1,29 @@
-// #todo
-
 'use strict';
 
 /*
 
-
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message (string) 
 
-  Test Cases:
+  Test Cases: hack your future --> 'Thank you for something!'
 
 */
 
-/* ---   ?   --- */
+let input = null;
 
-// input <- null
+while (input === null) {
+  input = prompt('enter something');
+}
 
-// WHILE: input === null
-//   input <- prompt('enter something')
-// :END WHILE
+let output = '';
 
-/* ---   ?   --- */
+if (input === '') {
+  output = 'you entered nothing :(';
+} else {
+  output = 'thank you for something!';
+}
 
-// output <- ''
-
-// IF: input === ''
-//   output <- 'you entered nothing :('
-// ELSE:
-//   output <- 'thank you for something!'
-// :END IF
-
-/* ---   ?   --- */
-
-// alert(output)
+alert(output);

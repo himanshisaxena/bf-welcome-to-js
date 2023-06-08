@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- accessing characters in a string by index --');

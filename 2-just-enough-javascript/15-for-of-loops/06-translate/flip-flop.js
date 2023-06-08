@@ -12,7 +12,7 @@
 
 */
 
-/* ---   ?   --- */
+/* --- Get user input --- */
 
 let normalPhrase = null;
 
@@ -20,7 +20,7 @@ while (normalPhrase === null) {
   normalPhrase = prompt('Enter something to flip-flop');
 }
 
-/* ---   ?   --- */
+/* --- Flip-flop the string --- */
 
 let previous = '';
 let flipFlopped = '';
@@ -36,12 +36,12 @@ for (let i = 0; i < normalPhrase.length; i++) {
   }
 }
 
-/* ---   ?   --- */
+/* --- Handle the last character if needed --- */
 
 if (flipFlopped.length < normalPhrase.length) {
   flipFlopped += normalPhrase[normalPhrase.length - 1];
 }
 
-/* ---   ?   --- */
+/* --- Display the flip-flopped string --- */
 
 alert(flipFlopped);

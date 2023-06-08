@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // your answers must use typeof, but can use any values

@@ -1,33 +1,29 @@
-// #todo
-
 'use strict';
 
-/* Has an "x"
-
+/*
 
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message indicating if the input has an "x" (string)
 
-  Test Cases:
+  Test Cases: Himanshi --> does not have a single "x"
 
 */
 
-/* ---  ?  --- */
+let input = null;
 
-// input <- null
-// WHILE: input === null
-// input <- prompt('enter something, the program will check if it has an "x"')
-// :END WHILE
+while (input === null) {
+  input = prompt('enter something, the program will check if it has an "x"');
+}
 
-/* ---  ?  --- */
+let message = '';
 
-// IF: input.includes('x')
-//  message <- message + 'has at least one "x"'
-// ELSE:
-//  message <- message + 'does not have a single "x"'
-// :END IF
+if (input.includes('x')) {
+  message = message + 'has at least one "x"';
+} else {
+  message = message + 'does not have a single "x"';
+}
 
-/* ---  ?  --- */
-
-// alert(message)
+alert(message);

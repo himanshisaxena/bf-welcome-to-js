@@ -1,3 +1,5 @@
+'use strict'
+
 /* Challenge: write this program using `break` and `continue`
 
   a user can input a non-empty string and only the letters will be turned into a mirror

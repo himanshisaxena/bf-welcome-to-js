@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 // combining .toUpperCase or .toLowerCase with .includes is helpful

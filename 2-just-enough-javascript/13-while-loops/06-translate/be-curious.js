@@ -1,32 +1,31 @@
-// #todo
-
 'use strict';
 
-/* Be Curious
-
+/*
 
   Data In:
+    - User input (string)
 
   Data Out:
+    - Alert message (string)
 
   Test Cases:
+    - Case 1:
+      Input: 'hello'
+      Output: 'hello?'
+    - Case 2:
+      Input: 'how are you?'
+      Output: 'how are you?'
 
 */
 
-/* ---  ?  --- */
+let input = null;
+while (input === null) {
+  input = prompt('enter something, it will become curious');
+}
 
-// input <- null
-// WHILE: input === null
-//   input <- prompt('enter something, it will become curious')
-// :END WHILE
+let output = input;
+if (input[input.length - 1] !== '?') {
+  output += '?';
+}
 
-/* ---  ?  --- */
-
-// output <- input
-// IF: input[input.length - 1] !== '?'
-//   output <- output + '?'
-// :END IF
-
-/* ---  ?  --- */
-
-// alert(output)
+alert(output);
